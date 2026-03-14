@@ -56,11 +56,13 @@ final class CmssectionModelTest extends CIUnitTestCase
 
     public function testValidationRejectsMissingName(): void
     {
-        $this->expectException(\CodeIgniter\Database\Exceptions\DataException::class);
-        $this->model->insert([
+        $result = $this->model->insert([
             'slug' => 'missing-name',
             'description' => 'Missing name',
             'status' => 'active',
         ]);
+
+        $this->assertFalse($result);
+        $this->assertArrayHasKey('name', $this->model->errors());
     }
 }

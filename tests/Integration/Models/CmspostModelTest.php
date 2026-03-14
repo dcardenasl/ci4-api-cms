@@ -109,8 +109,7 @@ final class CmspostModelTest extends CIUnitTestCase
             'schema' => json_encode(['fields' => []]),
         ]);
 
-        $this->expectException(\CodeIgniter\Database\Exceptions\DataException::class);
-        $this->model->insert([
+        $result = $this->model->insert([
             'section_id' => $sectionId,
             'post_type_id' => $postTypeId,
             'slug' => 'missing-title',
@@ -119,5 +118,8 @@ final class CmspostModelTest extends CIUnitTestCase
             'status' => 'published',
             'published_at' => date('Y-m-d H:i:s'),
         ]);
+
+        $this->assertFalse($result);
+        $this->assertArrayHasKey('title', $this->model->errors());
     }
 }
