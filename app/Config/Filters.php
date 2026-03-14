@@ -5,6 +5,7 @@ namespace Config;
 use App\Filters\AuthThrottleFilter;
 use App\Filters\CorsFilter;
 use App\Filters\FeatureToggleFilter;
+use App\Filters\InvalidCharsFilter;
 use App\Filters\JwtAuthFilter;
 use App\Filters\LocaleFilter;
 use App\Filters\RequestLoggingFilter;
@@ -17,7 +18,6 @@ use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\ForceHTTPS;
 use CodeIgniter\Filters\Honeypot;
-use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\PageCache;
 use CodeIgniter\Filters\PerformanceMetrics;
 
@@ -51,7 +51,7 @@ class Filters extends BaseFilters
         'csrf'          => CSRF::class,
         'toolbar'       => DebugToolbar::class,
         'honeypot'      => Honeypot::class,
-        'invalidchars'  => InvalidChars::class,
+        'invalidchars'  => InvalidCharsFilter::class,
         'secureheaders' => SecurityHeadersFilter::class,
         'cors'          => CorsFilter::class,
         'forcehttps'    => ForceHTTPS::class,
