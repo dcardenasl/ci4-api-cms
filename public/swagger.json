@@ -1343,6 +1343,261 @@
                 }
             }
         },
+        "/api/v1/cms/cmsposts": {
+            "get": {
+                "tags": [
+                    "Cms"
+                ],
+                "summary": "List Cmsposts",
+                "operationId": "c1ebd514c854118ed79a472c3fbeab02",
+                "responses": {
+                    "200": {
+                        "description": "List retrieved successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "example": "success"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/CmspostResponse"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Cms"
+                ],
+                "summary": "Create new Cmspost",
+                "operationId": "6affc7ef5498c78a537e3a87d47e37fc",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CmspostCreateRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created successfully"
+                    },
+                    "422": {
+                        "description": "Validation error"
+                    }
+                }
+            }
+        },
+        "/api/v1/cms/cmsposts/{id}": {
+            "get": {
+                "tags": [
+                    "Cms"
+                ],
+                "summary": "Get Cmspost by ID",
+                "operationId": "e0e6d2359e9eaaa20322b71dcfb46dfe",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Found"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                }
+            }
+        },
+        "/api/v1/cms/cmsposttypes": {
+            "get": {
+                "tags": [
+                    "Cms"
+                ],
+                "summary": "List Cmsposttypes",
+                "operationId": "3997f7982ac5167c90f2801dce5120b8",
+                "responses": {
+                    "200": {
+                        "description": "List retrieved successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "example": "success"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/CmsposttypeResponse"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Cms"
+                ],
+                "summary": "Create new Cmsposttype",
+                "operationId": "eead929113d37dfba504d43c99567878",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CmsposttypeCreateRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created successfully"
+                    },
+                    "422": {
+                        "description": "Validation error"
+                    }
+                }
+            }
+        },
+        "/api/v1/cms/cmsposttypes/{id}": {
+            "get": {
+                "tags": [
+                    "Cms"
+                ],
+                "summary": "Get Cmsposttype by ID",
+                "operationId": "36b4a58eeb50408b6b8e5953d173cbdb",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Found"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                }
+            }
+        },
+        "/api/v1/cms/cmssections": {
+            "get": {
+                "tags": [
+                    "Cms"
+                ],
+                "summary": "List Cmssections",
+                "operationId": "8742b1bed3506a23f22eddcfa6577c5d",
+                "responses": {
+                    "200": {
+                        "description": "List retrieved successfully",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "example": "success"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/CmssectionResponse"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Cms"
+                ],
+                "summary": "Create new Cmssection",
+                "operationId": "fdb073b3da4c1380034d107d7a43bc5f",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/CmssectionCreateRequest"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Created successfully"
+                    },
+                    "422": {
+                        "description": "Validation error"
+                    }
+                }
+            }
+        },
+        "/api/v1/cms/cmssections/{id}": {
+            "get": {
+                "tags": [
+                    "Cms"
+                ],
+                "summary": "Get Cmssection by ID",
+                "operationId": "9dbdefc60e7ddbb8f7c8eff1358b960e",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Found"
+                    },
+                    "404": {
+                        "description": "Not found"
+                    }
+                }
+            }
+        },
         "/api/v1/files": {
             "get": {
                 "tags": [
@@ -2686,6 +2941,9 @@
                 },
                 "type": "object"
             },
+            "CmspostCreateRequest": {},
+            "CmsposttypeCreateRequest": {},
+            "CmssectionCreateRequest": {},
             "UserCreateRequest": {
                 "title": "User Create Request",
                 "description": "Data needed to create a new user",
@@ -3145,6 +3403,127 @@
                         "description": "Resource name",
                         "type": "string",
                         "example": "Example Name"
+                    },
+                    "created_at": {
+                        "description": "Creation timestamp",
+                        "type": "string",
+                        "example": "2026-02-26 12:00:00",
+                        "nullable": true
+                    }
+                },
+                "type": "object"
+            },
+            "CmspostResponse": {
+                "title": "Cmspost Response",
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "description": "Unique identifier",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "section_id": {
+                        "description": "section_id",
+                        "type": "integer"
+                    },
+                    "post_type_id": {
+                        "description": "post_type_id",
+                        "type": "integer"
+                    },
+                    "title": {
+                        "description": "title",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "slug",
+                        "type": "string"
+                    },
+                    "content": {
+                        "description": "content",
+                        "type": "string"
+                    },
+                    "custom_data": {
+                        "description": "custom_data",
+                        "type": "object"
+                    },
+                    "status": {
+                        "description": "status",
+                        "type": "string"
+                    },
+                    "published_at": {
+                        "description": "published_at",
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    "created_at": {
+                        "description": "Creation timestamp",
+                        "type": "string",
+                        "example": "2026-02-26 12:00:00",
+                        "nullable": true
+                    }
+                },
+                "type": "object"
+            },
+            "CmsposttypeResponse": {
+                "title": "Cmsposttype Response",
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "description": "Unique identifier",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "name": {
+                        "description": "name",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "slug",
+                        "type": "string"
+                    },
+                    "schema": {
+                        "description": "schema",
+                        "type": "object"
+                    },
+                    "created_at": {
+                        "description": "Creation timestamp",
+                        "type": "string",
+                        "example": "2026-02-26 12:00:00",
+                        "nullable": true
+                    }
+                },
+                "type": "object"
+            },
+            "CmssectionResponse": {
+                "title": "Cmssection Response",
+                "required": [
+                    "id"
+                ],
+                "properties": {
+                    "id": {
+                        "description": "Unique identifier",
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "name": {
+                        "description": "name",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "description": "slug",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "description",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "status",
+                        "type": "string"
                     },
                     "created_at": {
                         "description": "Creation timestamp",
@@ -3869,6 +4248,10 @@
         {
             "name": "Demoproducts",
             "description": "Demoproducts"
+        },
+        {
+            "name": "Cms",
+            "description": "Cms"
         }
     ]
 }
