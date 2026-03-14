@@ -16,11 +16,8 @@ trait HasCrudActions
 {
     /**
      * Map actions to their respective Request DTO classes.
-     * Override these in your controller.
+     * Defined in the consuming controller.
      */
-    protected string $indexDto = '';
-    protected string $createDto = '';
-    protected string $updateDto = '';
 
     public function index(): ResponseInterface
     {

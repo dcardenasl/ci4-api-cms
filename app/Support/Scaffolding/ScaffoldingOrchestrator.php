@@ -72,9 +72,21 @@ class ScaffoldingOrchestrator
     private function validateFilesDoNotExist(array $files): void
     {
         $existing = [];
+        $appendable = ['Config/Routes/v1', 'Language/'];
+
         foreach (array_keys($files) as $path) {
             if (file_exists($path)) {
-                $existing[] = $path;
+                $isAppendable = false;
+                foreach ($appendable as $appDir) {
+                    if (str_contains($path, $appDir)) {
+                        $isAppendable = true;
+                        break;
+                    }
+                }
+
+                if (!$isAppendable) {
+                    $existing[] = $path;
+                }
             }
         }
 
