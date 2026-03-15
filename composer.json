@@ -1,6 +1,6 @@
 {
-    "name": "ci4/api-starter",
-    "description": "CodeIgniter 4 API Starter Kit with Layered Architecture",
+    "name": "ci4-api-cms/ci4-api-cms",
+    "description": "CodeIgniter 4 API CMS template for the ci4-api-cms project",
     "type": "project",
     "license": "MIT",
     "require": {

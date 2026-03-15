@@ -1,4 +1,4 @@
-# Multi-stage Dockerfile for CodeIgniter 4 API
+# Multi-stage Dockerfile for ci4-api-cms CMS template
 
 # Stage 1: Composer dependencies
 FROM composer:2 AS composer-build
@@ -21,8 +21,8 @@ RUN composer dump-autoload --optimize --no-dev
 # Stage 2: Production image
 FROM php:8.2-apache
 
-LABEL maintainer="CodeIgniter 4 API Starter"
-LABEL description="Production-ready CI4 API with JWT authentication"
+LABEL maintainer="ci4-api-cms Template Maintainers"
+LABEL description="Production-ready CMS template built on CodeIgniter 4 (ci4-api-starter v1)"
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \

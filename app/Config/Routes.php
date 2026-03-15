@@ -14,12 +14,12 @@ use CodeIgniter\Router\RouteCollection;
 
 $routes->get('/', static function () {
     return response()->setJSON([
-        'name'        => 'CodeIgniter 4 API Starter',
+        'name'        => 'ci4-api-cms',
         'version'     => '1.0.0',
-        'description' => 'Production-ready REST API with JWT authentication',
+        'description' => 'CodeIgniter 4 API CMS template for the ci4-api-cms project',
         'documentation' => [
             'openapi' => base_url('swagger.json'),
-            'github'  => 'https://github.com/david-cardenas/ci4-api-starter',
+            'github'  => 'https://github.com/dcardenasl/ci4-api-cms',
         ],
         'timestamp' => date('Y-m-d H:i:s'),
     ])->setStatusCode(200);

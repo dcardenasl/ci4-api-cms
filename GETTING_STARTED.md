@@ -1,6 +1,6 @@
-# Getting Started with CI4 API Starter
+# Getting Started with ci4-api-cms
 
-Welcome! This guide will help you get up and running with the CI4 API Starter template in under 30 minutes.
+Welcome! This guide will help you get up and running with the ci4-api-cms CMS template in under 30 minutes. ci4-api-cms is based on CodeIgniter 4 and derived from the ci4-api-starter v1 starter kit, so it keeps the same architectural guardrails while focusing on CMS use cases.
 
 ## What is This?
 
@@ -68,7 +68,7 @@ HTTP Response (JSON)
 ```bash
 # 1. Clone the repository (or use as GitHub template)
 git clone <your-fork-url>
-cd ci4-api-starter
+cd ci4-api-cms
 
 # 2. Install dependencies
 composer install
@@ -357,8 +357,8 @@ See deployment guides:
 ## Getting Help
 
 - **Documentation**: [`docs/`](docs/) directory
-- **Issues**: [GitHub Issues](https://github.com/david-cardenas/ci4-api-starter/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/david-cardenas/ci4-api-starter/discussions)
+- **Issues**: [GitHub Issues](https://github.com/dcardenasl/ci4-api-cms/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/dcardenasl/ci4-api-cms/discussions)
 - **CodeIgniter 4 Docs**: https://codeigniter.com/user_guide/
 
 ---

@@ -1,6 +1,6 @@
 # GEMINI.md - Project Context & Instructions
 
-This file provides the foundational context and operational mandates for working within the **CodeIgniter 4 API Starter Kit**. Always adhere to these modern, high-stakes architecture standards.
+This file provides the foundational context and operational mandates for working within the **ci4-api-cms CMS template** (bootstrapped from the CodeIgniter 4 API Starter Kit v1). Always adhere to these modern, high-stakes architecture standards.
 
 ## Project Overview
 
