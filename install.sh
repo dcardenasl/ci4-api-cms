@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-TEMPLATE_REPO_URL="${TEMPLATE_REPO_URL:-https://github.com/dcardenasl/ci4-api-starter.git}"
+TEMPLATE_REPO_URL="${TEMPLATE_REPO_URL:-https://github.com/dcardenasl/ci4-api-cms.git}"
 TEMPLATE_BRANCH="${TEMPLATE_BRANCH:-main}"
 
 GREEN='\033[0;32m'
@@ -203,7 +203,7 @@ if [[ "$RESET_GIT" =~ ^[Yy]$ ]]; then
   rm -rf .git
   git init >/dev/null
   git add .
-  if git commit -m "Initial commit from ci4-api-starter template" >/dev/null 2>&1; then
+  if git commit -m "Initial commit from ci4-api-cms template" >/dev/null 2>&1; then
     print_ok "Git repository reset with initial commit"
   else
     print_warn "Git initialized, but commit failed (configure git user.name/user.email and commit manually)."

@@ -1,6 +1,6 @@
-# CodeIgniter 4 API Starter Kit 🚀
+# ci4-api-cms CMS Template
 
-A production-ready REST API starter template with an advanced **Automated Scaffolding Engine**, strict DTO-first architecture, and comprehensive quality guardrails.
+ci4-api-cms is a production-ready **CMS template** built on CodeIgniter 4 and derived from the `ci4-api-starter` v1 starter kit. It keeps the automated scaffolding, DTO-first discipline, JWT authentication, and quality guardrails while focusing on CMS-ready wiring and documentation.
 
 ## Key Features
 
@@ -15,15 +15,15 @@ A production-ready REST API starter template with an advanced **Automated Scaffo
 
 1. **One-command Bootstrap (recommended):**
    ```bash
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dcardenasl/ci4-api-starter/main/install.sh)"
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dcardenasl/ci4-api-cms/main/install.sh)"
    ```
    *This interactive installer clones the template, configures `.env`, creates DBs, runs migrations, and bootstraps the first superadmin.*
    *Existing local scripts (`init.sh`, `setup-env.sh`) remain available for internal/advanced workflows.*
 
 2. **Manual Clone and Install (advanced/local):**
    ```bash
-   git clone https://github.com/dcardenasl/ci4-api-starter.git
-   cd ci4-api-starter
+   git clone https://github.com/dcardenasl/ci4-api-cms.git
+   cd ci4-api-cms
    composer install
    ```
    *Note: This automatically installs the Git pre-commit hooks.*

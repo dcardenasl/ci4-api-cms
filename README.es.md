@@ -1,4 +1,4 @@
-# CodeIgniter 4 API Starter Kit
+# ci4-api-cms CMS Template
 
 ![PHP Version](https://img.shields.io/badge/PHP-8.2%20%7C%208.3-blue)
 ![CodeIgniter](https://img.shields.io/badge/CodeIgniter-4.6-orange)
@@ -6,7 +6,7 @@
 
 [English](README.md) | Español
 
-Una plantilla de API REST lista para producción con CodeIgniter 4 con una **arquitectura moderna orientada a DTOs**, autenticación JWT y cobertura de tests completa.
+`ci4-api-cms` es una plantilla CMS para CodeIgniter 4 derivada del kit `ci4-api-starter` v1. Conserva la arquitectura DTO-first, autenticación JWT y el conjunto de calidad de la plantilla original, y añade focos específicos para CMS y documentación viva.
 
 ## Arquitectura Core
 
@@ -48,7 +48,7 @@ Este proyecto sigue una arquitectura de capas avanzada diseñada para la escalab
 3. Ejecuta el instalador interactivo:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dcardenasl/ci4-api-starter/main/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dcardenasl/ci4-api-cms/main/install.sh)"
 ```
 
 Tu API estara corriendo en `http://localhost:8080`

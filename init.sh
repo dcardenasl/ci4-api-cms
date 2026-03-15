@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# CodeIgniter 4 API Starter - Initialization Script
-# This script automates the setup of a new API project
+# ci4-api-cms Template - Initialization Script
+# This script automates the setup of a new CMS project based on ci4-api-starter v1
 
 set -e  # Exit on error
 
@@ -50,7 +50,7 @@ while [[ $# -gt 0 ]]; do
 done
 
 echo -e "${BLUE}╔════════════════════════════════════════════════════════╗${NC}"
-echo -e "${BLUE}║   CodeIgniter 4 API Starter - Initialization Script   ║${NC}"
+echo -e "${BLUE}║      ci4-api-cms CMS Template Initialization Tool      ║${NC}"
 echo -e "${BLUE}╚════════════════════════════════════════════════════════╝${NC}"
 echo ""
 
