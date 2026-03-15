@@ -1,6 +1,6 @@
 # Documentation Index
 
-Welcome to the documentation for the **CodeIgniter 4 API Starter Kit**. This index only lists files that exist in the template.
+Welcome to the documentation for the **ci4-api-cms CMS template** (derived from the CodeIgniter 4 API Starter Kit v1). This index only lists files that exist in the template.
 
 ## Core Systems
 

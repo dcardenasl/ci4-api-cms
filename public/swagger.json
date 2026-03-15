@@ -1,8 +1,8 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "CodeIgniter 4 API Starter",
-        "description": "RESTful API built with CodeIgniter 4, featuring JWT authentication, standardized responses, and comprehensive documentation.",
+        "title": "ci4-api-cms API",
+        "description": "CodeIgniter 4 API CMS template for the ci4-api-cms project",
         "version": "1.0.0"
     },
     "servers": [

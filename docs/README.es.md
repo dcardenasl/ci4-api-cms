@@ -1,6 +1,6 @@
 # Índice de Documentación
 
-Bienvenido a la documentación del **CodeIgniter 4 API Starter Kit**. Este índice solo lista archivos que existen en el template.
+Bienvenido a la documentación de la **plantilla CMS ci4-api-cms** (derivada del CodeIgniter 4 API Starter Kit v1). Este índice solo lista archivos que existen en el template.
 
 ## Sistemas Core
 

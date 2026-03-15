@@ -24,13 +24,13 @@ php spark audit:clean 180
 ### Recommended cron (daily at 02:15)
 
 ```cron
-15 2 * * * cd /path/to/ci4-api-starter && /usr/bin/php spark audit:clean >> /var/log/ci4/audit-clean.log 2>&1
+15 2 * * * cd /path/to/ci4-api-cms && /usr/bin/php spark audit:clean >> /var/log/ci4/audit-clean.log 2>&1
 ```
 
 ### Recommended cron (hourly in high-volume environments)
 
 ```cron
-0 * * * * cd /path/to/ci4-api-starter && /usr/bin/php spark audit:clean >> /var/log/ci4/audit-clean.log 2>&1
+0 * * * * cd /path/to/ci4-api-cms && /usr/bin/php spark audit:clean >> /var/log/ci4/audit-clean.log 2>&1
 ```
 
 ## 2. Critical Alert Rules

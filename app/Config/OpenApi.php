@@ -9,8 +9,8 @@ use OpenApi\Attributes as OA;
 )]
 #[OA\Info(
     version: '1.0.0',
-    title: 'CodeIgniter 4 API Starter',
-    description: 'RESTful API built with CodeIgniter 4, featuring JWT authentication, standardized responses, and comprehensive documentation.',
+    title: 'ci4-api-cms API',
+    description: 'CodeIgniter 4 API CMS template for the ci4-api-cms project',
 )]
 #[OA\Server(
     url: 'http://localhost:8080',
